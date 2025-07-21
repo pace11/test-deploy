@@ -1,14 +1,14 @@
-# name: Deploy vercel on tag
+name: Deploy vercel on taging
 
-# on:
-#     push:
-#         tags:
-#             -
+on:
+  push:
+    tags:
+      - 'v*'
 
-# jobs:
-#     deploy:
-#         runs-on: unbuntu-latest
-#         steps:
-#             - name: Trigger from deployment vercel hook
-#               run: |
-#                curl .....
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger from deployment hook
+        run: |
+          curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_cvP6GWmzNA0XtTBaRhQRxS4D8nGs/BEvIWB8NH1
