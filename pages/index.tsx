@@ -17,7 +17,9 @@ export default function Home() {
   return (
     <div>
       {process.env.NEXT_PUBLIC_DOMAIN_URL}
-      <p className="text-3xl font-bold underline">Index Home Update</p>
+      <p className="text-3xl font-bold underline">
+        Index Home Update from push tag with github actions
+      </p>
       {data.status === 'authenticated' && (
         <p>{`login sebagai ${data.data?.user?.email}`}</p>
       )}
