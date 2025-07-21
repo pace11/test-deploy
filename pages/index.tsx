@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div>
       {process.env.NEXT_PUBLIC_DOMAIN_URL}
-      <p className="text-3xl font-bold underline">Index Home</p>
+      <p className="text-3xl font-bold underline">Index Home Update</p>
       {data.status === 'authenticated' && (
         <p>{`login sebagai ${data.data?.user?.email}`}</p>
       )}

@@ -1,0 +1,14 @@
+# name: Deploy vercel on tag
+
+# on:
+#     push:
+#         tags:
+#             -
+
+# jobs:
+#     deploy:
+#         runs-on: unbuntu-latest
+#         steps:
+#             - name: Trigger from deployment vercel hook
+#               run: |
+#                curl .....
